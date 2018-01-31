@@ -1,0 +1,72 @@
+{
+  "name": "pura",
+  "version": "4.2.1",
+  "scripts": {
+    "test": "./tasks/subtasks/lint.sh",
+    "deploy": "./tasks/deploy.sh",
+    "start": "./tasks/watch.sh",
+    "build": "./tasks/build.sh",
+    "dev": "npm start"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^7.1.2",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.1.1",
+    "babel-preset-env": "^1.6.0",
+    "browser-sync": "^2.18.12",
+    "clean-css-cli": "^4.1.6",
+    "globby": "^6.1.0",
+    "imagemin": "5.1.2",
+    "imagemin-jpegtran": "^5.0.2",
+    "imagemin-pngquant": "^5.0.1",
+    "imagemin-svgo": "^5.2.2",
+    "node-version-assets": "^1.2.0",
+    "postcss-cli": "^4.1.0",
+    "postcss-color-function": "^4.0.0",
+    "postcss-easy-import": "^2.0.0",
+    "postcss-hexrgba": "^0.2.1",
+    "postcss-mixins": "^6.0.1",
+    "postcss-nested": "^2.0.4",
+    "postcss-simple-vars": "^4.0.0",
+    "stylelint": "^8.4.0",
+    "stylelint-trendyminds-standard": "^2.1.0",
+    "webpack": "^3.3.0",
+    "xo": "^0.18.2"
+  },
+  "dependencies": {
+    "normalize.css": "^7.0.0",
+    "picturefill": "^3.0.2",
+    "promise-polyfill": "^7.0.0"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ],
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  },
+  "xo": {
+    "space": true,
+    "envs": [
+      "browser"
+    ],
+    "rules": {
+      "new-cap": [
+        "error",
+        {
+          "properties": false
+        }
+      ],
+      "no-new": 0,
+      "unicorn/filename-case": 0,
+      "unicorn/explicit-length-check": 0,
+      "import/no-unassigned-import": 0,
+      "no-alert": 0
+    }
+  },
+  "stylelint": {
+    "extends": "stylelint-trendyminds-standard"
+  }
+}

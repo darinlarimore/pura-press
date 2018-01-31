@@ -1,0 +1,29 @@
+{
+  "name": "stylelint-no-multiple-top-level-modules",
+  "version": "1.0.1",
+  "description": "Warns or errors when using multiple top-level selectors within a module file.",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aaronbushnell/stylelint-no-multiple-top-level-modules.git"
+  },
+  "keywords": [
+    "stylelint-rule",
+    "stylelint",
+    "css"
+  ],
+  "author": "Aaron Bushnell",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aaronbushnell/stylelint-no-multiple-top-level-modules/issues"
+  },
+  "homepage": "https://github.com/aaronbushnell/stylelint-no-multiple-top-level-modules#readme",
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "stylelint": "^7.0.0"
+  },
+  "devDependencies": {
+    "stylelint-test-rule-tape": "^0.2.0"
+  }
+}
