@@ -54,5 +54,5 @@ Prep: config wordpress like normal, make a db, create mamp apache server to test
 I think there are multiple ways to do this. I'll demo one method, which adds js on top of the base js and won't trip the linter, I hope.
 
 1. Locate functions.php it's in the root.
-2. add `wp_enqueue_script( 'pura-script', get_template_directory_uri() . '/src/_compiled/app.js' );`
+2. Add `wp_enqueue_script( 'pura-script', get_template_directory_uri() . '/src/_compiled/app.js' );` to functions.php I think this works well here because it's always gonna get pulled in vs putting it like in the footer template.
 
